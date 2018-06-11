@@ -121,7 +121,7 @@ Instalando as dependências para a disciplina:
 
 
 #### Instalando o Github
-Instalando ferramenta de acesso e gerência do repositório [Github](git-scm.com)
+Instalando ferramenta de acesso e gerência do repositório [Github](http://git-scm.com)
 
 	sudo apt-get install git
 
@@ -139,10 +139,16 @@ RVM: Para instalar o RVM você pode serguir o tutorial presente neste [link RVM]
 
 	sudo apt-get install rvm
 
+
+> AVISO: Saia da máquina virtual e entre novamente para que o rvm funcione.
+
+
 #### Ruby
 Você pode instalar a versão que desejar da linguagem de programação [Ruby](http://www.ruby-lang.org), usando o comando:
 		
 	rvm install <versão>
+
+Veja as versão mais recentes neste [link](http://www.ruby-lang.org).
 
 Também é possível instalar várias versão e configurar qual irá usar:
 
@@ -154,7 +160,7 @@ Para ver a versão que está sendo utilizada:
 
 ####  GEMs
 
-Uma “RubyGem” ou simplesmente “Gem” é uma biblioteca, um conjunto de arquivos Ruby reusáveis, etiquetada com um nome e uma versão. Você pode reutilizar diversas funcionalidades já implementadas em Gems, basta pesquisar neste [site](rubygems.org) a que melhor corresponde a suas necessidades.
+Uma “RubyGem” ou simplesmente “Gem” é uma biblioteca, um conjunto de arquivos Ruby reusáveis, etiquetada com um nome e uma versão. Você pode reutilizar diversas funcionalidades já implementadas em Gems, basta pesquisar neste [site](http://rubygems.org) a que melhor corresponde a suas necessidades.
 
 Para instalar uma nova Gem:
 
@@ -169,20 +175,24 @@ Para listar as Gems instaladas:
 	gem list
 
 ####  Bundler
-O [Bundler](bundler.io) é um gerenciador para instalação de Gems.
-Arquivos:
-• Gemfile:
-• source ‘’
-• gem ‘??’
-• Gemfile.lock
+O [Bundler](http://bundler.io) é um gerenciador para instalação de Gems. Veja o arquivo Gemfile dentro do projeto criado usando Rails.
 
 Instalação:
+
+	gem install bundle
+
+
+Para usar, dentro da pasta do projeto Rails, use o comando (ele irá baixar e instalar as dependências especificadas no arquivo Gemfile): 
+
 
 	bundle install
 	
+
 ####  Rails
-Framework [Rails](rubyonrails.org) para desenvolvimento de aplicações web.
+Framework [Rails](http://rubyonrails.org) para desenvolvimento de aplicações web.
+
 Instalação:
+
 	gem install rails
 
 Para ver a versão instalada:
@@ -190,7 +200,8 @@ Para ver a versão instalada:
 	rails -v
 	
 ####  NodeJS
-O [NodeJS](nodejs.org) é um Interpretador (servidor) javascript.
+O [NodeJS](http://nodejs.org) é um Interpretador (servidor) javascript.
+
 Instalação:
 
 	sudo apt-get install nodejs
@@ -227,3 +238,4 @@ Criando um novo banco:
 Acesso:
 
 	psql
+
