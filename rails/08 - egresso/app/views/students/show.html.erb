@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @student.nome %>
+</p>
+
+<p>
+  <strong>Matricula:</strong>
+  <%= @student.matricula %>
+</p>
+
+<p>
+  <strong>Ano:</strong>
+  <%= @student.ano %>
+</p>
+
+<p>
+  <strong>Semestre:</strong>
+  <%= @student.semestre %>
+</p>
+
+<p>
+  <strong>Senha:</strong>
+  <%= @student.senha %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @student.course.nome %>
+</p>
+
+
+<h2>Contatos</h2>
+
+<table class="table">
+   <thead>
+     <tr>
+       <td>Tipo</td>
+       <td>Valor</td>
+     </tr>
+   </thead>
+   <tbody>
+      <% for contato in @student.contacts %>
+          <tr>
+            <td><%= contato.tipo %></td>
+            <td><%= contato.valor %></td>
+          </tr>
+      <% end %>     
+   </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>
